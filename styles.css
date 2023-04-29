@@ -1,0 +1,517 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Roboto:wght@400;500;700&display=swap');
+
+
+
+:root{
+    --black-on: #212529;
+    --white-background-one: #ffffff;
+    --white-two: #f8f9fa;
+    --white-three: #f3f3f3;
+    --white-four: #21252908;
+    --lightblack: #3e454bbf;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    font-size: 10px;
+    overflow-x: hidden;
+    
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+img{
+    height: 100%;
+}
+
+a,
+p,
+li,
+button
+{
+    font-family: 'Poppins', sans-serif;
+   
+}
+h1,
+h2,
+h3,
+h4{
+    font-family: 'Roboto', sans-serif;
+}
+/* hero style */
+
+
+#hero{
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    height: fit-content;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 3rem;
+   
+}
+
+.hero-wrapper{
+display: flex;
+
+gap: 2rem;
+justify-content: space-between;
+}
+.hero-right{
+    
+   margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    flex: 2;
+   
+}
+.hero-left{
+    margin-block: 16rem;
+max-width: 450px;
+    
+    object-position: left;
+    padding: 1rem;
+   
+    flex:2;
+}
+.hero-title h2{
+font-size: 3rem;
+line-height: 3.2rem;
+
+}
+
+.hero-right img{
+    object-position: right;
+}
+
+.hero-btns{
+    margin-top: 1rem;
+}
+ .apple-btn{
+    padding: .6rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+   cursor: pointer;
+   background-color: white;
+   transition: all .3s ease;
+ }
+
+ .apple-btn a{
+    font-size: 1.1rem;
+    color: var(--black-on);
+    font-family: 'Poppins', sans-serif;
+
+ }
+    
+
+ .andriod-btn{
+    padding: .6rem 1.5rem;
+    border: 1px solid var(--white-background-one);
+    border-radius: 10px;
+    background: none;
+    color: var(--white-background-one);
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: all .3s ease;
+ }
+
+ .andriod-btn a{
+    font-size: 1.1rem;
+    color: var(--white-background-one);
+    font-weight: 300;
+   
+   
+    
+ }
+
+ .apple-btn:hover{
+    background: 
+    #d2d4d7;
+ }
+.andriod-btn:hover{
+    background-color: white;
+color: var( --black-on
+);
+}
+
+.andriod-btn:hover a{
+    color: var(
+        --black-on
+    );
+}
+
+
+@media(max-width:980px){
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .hero-wrapper{
+        flex-direction: column-reverse;
+        gap: .4rem;
+    }
+
+    .hero-left{
+        margin-block: auto;
+        max-width: max-content;
+      ;
+    }
+    .hero-title h2{
+        font-size: 2.5rem;
+    }
+    .hero-right{
+        justify-content: start;
+    }
+}
+
+@media(max-width:765px){
+    .container{width: 95%;
+    margin: 0 auto;}
+   .hero-btns{
+    display: grid;
+    grid-template-columns: minmax(100px, 500px);
+    gap: .5rem;
+   }
+   .hero-title h2{
+    font-size: 2.3rem;
+   }
+
+}
+
+/* end of hero section */
+
+/*  description section */
+
+.description-details h3{
+    font-size: 2.2rem;
+ 
+    font-weight: 500;
+    margin-bottom: 1rem;
+
+}
+.description-wrapper{
+    display: flex;
+    gap: 1rem;
+}
+.description-item{
+    display: flex;
+    gap: .5rem;
+  
+    padding: 1rem;
+}
+
+.description-details p{
+    font-size: .9rem;
+  
+font-family: 'Poppins', sans-serif;
+}
+
+.description-icon{
+    background-color: #d6d7dc;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.description-icon svg{
+    height: 30px;
+   
+}
+
+
+#description-section{
+    padding-block: 7rem;
+}
+@media(max-width:980px){
+    .description-wrapper{
+        flex-direction: column;
+    }
+
+    #description-section{
+        padding-block: 1.5rem;
+    }
+    .description-details h3{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media(max-width:765px){
+    .description-details h3{
+        font-size: 1.5rem;
+    }
+}
+/* end of description section */
+
+/* start of advert section */
+
+
+#advert-section{
+    background: var(--white-three);
+    padding-block: 3rem;
+}
+.advert-section-title h3{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: .1rem;
+
+}
+
+.advert-section-title {
+    margin-bottom: 3rem;
+}
+
+.advert-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.advert-section-middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    gap: .5rem;
+}
+
+
+.advert-section-middle p{
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: var(--lightblack);
+    letter-spacing: .1rem;
+}
+
+
+.advert-section-logos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3.5rem;
+}
+
+.logos{
+    overflow: hidden;
+    width: 150px;
+    object-fit: contain;
+    height: 30px;
+}
+
+.logos img{
+    width: 100%;
+}
+@media(max-width:980px){
+    .advert-section-title h3{
+        font-size: 1.9rem;
+        
+    }
+
+    .advert-section-logos{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
+
+/* advert end*/
+
+/* price section start */
+
+#plan-section{
+    padding-top:5rem;
+    margin-bottom: 5rem;
+}
+.section-plan-title h2{
+font-size: 3.5rem;
+font-weight: 300;
+text-align: center;
+letter-spacing: .2rem;
+color: #24282d;
+}
+.section-plan-title P{
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--lightblack);
+    font-weight: 300;
+    margin-top: .5rem;
+}
+.section-plan-price-wrapper{
+    display: flex;
+    margin-top: 3rem;
+justify-content: space-between;
+gap: 1rem;
+}
+
+.price-item-title h4{
+   font-size: 1.6rem; 
+   font-weight: 300;
+   color: rgb(42, 41, 41);
+}
+
+.price-item-title{
+    padding: 1rem 2rem;
+    background: var(--white-three);
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid black;
+ 
+}
+
+.section-plan-price-item{
+    flex: 1;
+    text-align: center;
+border: 1px solid black;
+border-radius: 6px;
+
+border-radius: 10px;
+overflow: hidden;
+
+
+}
+
+
+    .price{
+        font-size: 3rem;
+        font-weight: 700;
+
+    }
+    .price span{
+        color: grey;
+        font-weight: 300;
+        font-size: 1.4rem;
+    }
+
+    .price-item-lists li{
+        font-size: 1rem;
+        margin-bottom: .2rem;
+        color: rgb(44, 44, 44);
+    }
+
+    .section-plan-price-item button{
+        padding: .4rem 1rem;
+        margin-top: 1rem;
+        width: 90%;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: 300;
+        border-radius: 5px;
+        border: solid 1px black;
+        background-color: transparent;
+        color: rgb(45, 45, 45);
+        cursor: pointer;
+        transition: all .3s ease;
+        white-space: nowrap;
+        
+    }
+
+    .section-plan-price-item:nth-child(2) button,
+    .section-plan-price-item:nth-child(3) button{
+        background-color: black;
+        color: white;
+    }
+ 
+    .section-plan-price-item:nth-child(3) .price-item-title{
+        background-color: black;
+      
+    }
+    .section-plan-price-item:nth-child(3) .price-item-title h4{
+        color: white;
+    }
+    .section-plan-price-item:nth-child(2) button:hover,
+    .section-plan-price-item:nth-child(3) button:hover{
+        background: rgb(73, 71, 71);
+    }
+
+
+    .section-plan-price-item:nth-child(1) button:hover{
+        background: black;
+        color: white;
+    }
+@media(max-width:980px){
+    .section-plan-price-item button{
+        font-size: 1.3rem;
+    }
+}
+    @media(max-width:780px){
+      .section-plan-price-wrapper{
+        flex-direction: column;
+        max-width: 500px;
+        margin: 2em auto;
+      }
+    }
+
+    /* end of price list section */
+
+/* footer section */
+#footer{
+    background:  linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);;
+    padding-bottom: 3rem;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.copyright{
+    font-size: 1.2rem;
+    color: #212529;
+    font-family: 'poppins', sans-serif;
+    flex: 5;
+    flex-shrink: 0;
+    
+}
+.footer-section-links h4{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: .7rem;
+}
+
+.footer-section-links ul li a{
+    font-size: 1rem;
+    color: #24282d;
+}
+
+.footer-section-links li{
+    margin-bottom: .5rem;
+}
+.footer-section-links{
+    flex: 2;
+    
+}
+
+@media(max-width:750px){
+    .footer-wrapper{
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .copyright{
+        margin-top: 3rem;
+    }
+}
